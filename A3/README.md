@@ -30,9 +30,14 @@ Start the monitoring stack:
 docker compose up -d
 ​```
 
-Prometheus collects GPU metrics from DCGM Exporter and vLLM runtime metrics exposed through the `/metrics` endpoint, including GPU memory usage (`DCGM_FI_DEV_FB_USED`) and request queue metrics (`vllm:num_requests_waiting`).
+Prometheus collects GPU metrics from DCGM Exporter and vLLM runtime metrics
+exposed through the `/metrics` endpoint.
 
-Grafana visualizes the collected metrics during execution. The dashboards are not included in this repository; import them from the Grafana Dashboard Library (<https://grafana.com/grafana/dashboards/>) after launching Grafana.
+The dashboards are not included in this repository.
+After launching Grafana, import the required dashboards from the Grafana
+Dashboard Library:
+
+<https://grafana.com/grafana/dashboards/>
 
 ## Bandwidth Measurement
 
@@ -43,9 +48,10 @@ Procedure:
 1. Launch the target vLLM container with the specified MIG profile
    (`1g.10gb` or `1g.20gb`) using the provided Docker command.
 
-2. Start the vLLM server under NVIDIA Nsight Systems profiling with the
-   provided profiling command. The profiling configuration enables GPU metrics
-   collection, including **DRAM Bandwidth (%)**.
+2. Start the vLLM server using NVIDIA Nsight Systems profiling
+   (`nsys profile`) with the provided profiling command.
+   The profiling configuration enables GPU metric collection, including
+   **DRAM Bandwidth (%)**.
 
 3. Execute the benchmark workload following the procedure described in A1.
 
@@ -57,4 +63,9 @@ Procedure:
    
 ## Expected Output
 
-The monitoring stack reports GPU memory usage and vLLM runtime metrics. The provided Nsight Systems report files, `1g10gb_mig_gpu090.nsys-rep` and `1g20gb_mig_gpu090.nsys-rep`, contain the profiling results used to reproduce the peak memory bandwidth measurements discussed in Section III-B.
+The monitoring stack reports GPU memory usage and vLLM runtime metrics. 
+
+The Nsight Systems profiling procedure generates `.nsys-rep` files, which can be
+opened with NVIDIA Nsight Systems to inspect GPU metrics, including DRAM
+Bandwidth (%), and reproduce the peak memory bandwidth measurements discussed
+in Section III-B.
