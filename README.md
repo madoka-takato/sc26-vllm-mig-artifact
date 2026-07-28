@@ -1,8 +1,8 @@
-# Artifacts for "Performance Characterization of GPU Sharing Strategies for LLM Inference"
+# Artifact: Performance Characterization of GPU Sharing Strategies for LLM Inference
 
-The artifacts reproduce the performance evaluation of two GPU-sharing
+The artifact reproduces the performance evaluation of two GPU-sharing
 configurations for concurrent LLM inference on a single NVIDIA H100 PCIe GPU:
-software-based sharing (*vLLM-only*) and hardware-level partitioning with
+software-based sharing (*vLLM-only*) and hardware-level partitioning using NVIDIA
 Multi-Instance GPU (*vLLM+MIG*).
 
 ## Repository Structure
