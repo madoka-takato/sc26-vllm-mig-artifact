@@ -7,8 +7,8 @@ NVIDIA Multi-Instance GPU (*vLLM+MIG*).
 
 ## Repository Structure
 
-- `A1/` — single-server performance characterization for individual MIG
-  profiles (reproduces Figs. 1–2).
+- `A1/` — single-server performance characterization of *vLLM-only*
+  and MIG-based configurations (reproduces Figs. 1–2).
 - `A2/` — comparison of *vLLM-only* and *vLLM+MIG* configurations
   with different numbers of concurrent servers and workload intensities
   (reproduces Figs. 3–6).
