@@ -13,8 +13,8 @@ bandwidth-measurement procedure used in the paper.
   - `grafana-datasources.yml`
 - `profile.sh` — executes NVIDIA Nsight Systems profiling.
 - `nsight_reports/` — Nsight Systems profiling results.
-  - `1g10gb_mig_gpu090.nsys-rep`
-  - `1g20gb_mig_gpu090.nsys-rep`
+  - `1g10gb.nsys-rep`
+  - `1g20gb.nsys-rep`
 
 ## Prerequisites
 
