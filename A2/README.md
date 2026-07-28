@@ -19,14 +19,15 @@ Identical to A1.
 
 ### Reproducing Figs. 3–5
 
-1. Configure either:
+1. Configure the target environment:
 
-   * vLLM-only, or
-   * vLLM+MIG.
+   * *vLLM-only*, or
+   * *vLLM+MIG*.
+
 2. Launch seven vLLM servers.
-3. Execute `tmux_run.sh`.
-4. Repeat the benchmark while targeting seven, six, five, ..., and one server.
-5. Repeat each experiment three times.
+
+3. Run benchmarks concurrently on seven, six, five, ..., and one selected
+   servers using `tmux_run.sh`.
 
 ### Reproducing Fig. 6
 
