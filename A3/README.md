@@ -33,18 +33,9 @@ Start the monitoring stack:
 docker compose up -d
 ​```
 
-Prometheus collects:
+Prometheus collects GPU metrics from DCGM Exporter and vLLM runtime metrics exposed through the `/metrics` endpoint, including GPU memory usage (`DCGM_FI_DEV_FB_USED`) and request queue metrics (`vllm:num_requests_waiting`).
 
-- GPU memory usage (`DCGM_FI_DEV_FB_USED`)
-- GPU utilization and related GPU metrics from DCGM Exporter
-- vLLM runtime metrics exposed through the `/metrics` endpoint of each vLLM server
-- Queue-related metrics, including `vllm:num_requests_waiting`
-
-Grafana visualizes the collected metrics during execution. The dashboards
-are not included in this repository; import them from the Grafana Dashboard
-Library (<https://grafana.com/grafana/dashboards/>) after launching Grafana.
-
-Set the Prometheus instance (`http://prometheus:9090`) as the data source when importing.
+Grafana visualizes the collected metrics during execution. The dashboards are not included in this repository; import them from the Grafana Dashboard Library (<https://grafana.com/grafana/dashboards/>) after launching Grafana.
 
 ## Bandwidth Measurement
 
@@ -55,9 +46,8 @@ Procedure:
 1. Launch the target vLLM server (1g.10gb or 1g.20gb).
 2. Execute the profiling command using `profile.sh`.
 3. Open the generated `.nsys-rep` file with NVIDIA Nsight Systems.
-4. Navigate to **GPU Metrics**.
-5. Record the maximum value of **DRAM Bandwidth (%)**.
-6. Multiply this percentage by the theoretical peak memory bandwidth of the
+4. Record the maximum value of **DRAM Bandwidth (%)**.
+5. Multiply this percentage by the theoretical peak memory bandwidth of the
    corresponding MIG profile to obtain the peak GPU memory bandwidth.
 
 ## Expected Output
