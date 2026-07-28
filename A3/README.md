@@ -49,13 +49,9 @@ Procedure:
 
 3. Execute the benchmark workload following the procedure described in A1.
 
-4. Open the generated `.nsys-rep` file with NVIDIA Nsight Systems and inspect
-   the **GPU Metrics** view.
+4. Open the generated `.nsys-rep` file with NVIDIA Nsight Systems and record the maximum observed value of **DRAM Bandwidth (%)** during the benchmark execution.
 
-5. Record the maximum observed value of **DRAM Bandwidth (%)** during the
-   benchmark execution.
-
-6. Multiply the recorded DRAM Bandwidth percentage by the theoretical peak
+5. Multiply the recorded DRAM Bandwidth percentage by the theoretical peak
    memory bandwidth of the corresponding MIG profile to obtain the achieved GPU
    memory bandwidth.
    
