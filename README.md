@@ -7,12 +7,12 @@ Multi-Instance GPU (*vLLM+MIG*).
 
 ## Repository Structure
 
-- `A1_single_server/` — single-server characterization of individual MIG
+- `A1/` — single-server characterization of individual MIG
   profiles (reproduces Figs. 1–2).
-- `A2_multi_server/` — comparison of *vLLM-only* and *vLLM+MIG* while
+- `A2/` — comparison of *vLLM-only* and *vLLM+MIG* while
   varying the number of concurrent servers and the offered load
   (reproduces Figs. 3–6).
-- `A3_monitoring/` — monitoring stack (DCGM Exporter, Prometheus, Grafana)
+- `A3/` — monitoring stack (DCGM Exporter, Prometheus, Grafana)
   and the Nsight Systems bandwidth measurement.
 
 Each directory contains its own README with detailed instructions.
@@ -25,15 +25,15 @@ Each directory contains its own README with detailed instructions.
 
 ### Software
 - Rocky Linux 9.5
-- NVIDIA Driver 535.288.01 (CUDA 12.2, as reported by `nvidia-smi`)
+- NVIDIA Driver 535.288.01
+- CUDA 12.2
 - Docker Engine 29.3.0
 - NVIDIA Container Toolkit 1.19.0
 - Container image: `vllm/vllm-openai:v0.19.0`
-- tmux (for A2)
 - NVIDIA Nsight Systems 2025.3.1.90 (for A3)
 
 ### Model and Dataset
-- Model: `LiquidAI/LFM2.5-1.2B-Instruct` (downloaded automatically by vLLM)
+- Model: `LiquidAI/LFM2.5-1.2B-Instruct` 
 - Prompts: ShareGPT_V3 dataset （URL）
 
 ## Reproduction Overview
@@ -41,6 +41,6 @@ Each directory contains its own README with detailed instructions.
 1. Set up the environment (see Requirements).
 2. (Optional) Start the monitoring stack in `A3/` to record
    GPU memory usage and queueing metrics during the experiments.
-3. Run `A1_single_server/` to reproduce Figs. 1–2.
-4. Run `A2_multi_server/` to reproduce Figs. 3–6.
-5. Use `A3_monitoring/` for the bandwidth measurement (Section III-B).
+3. Run `A1/` to reproduce Figs. 1–2.
+4. Run `A2/` to reproduce Figs. 3–6.
+5. Use `A3/` for the bandwidth measurement (Section III-B).
