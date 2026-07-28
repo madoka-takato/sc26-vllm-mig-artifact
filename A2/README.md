@@ -9,8 +9,8 @@ This artifact reproduces the multi-server experiments presented in Figs. 3–6.
 ### Contents
 
 * `launch_servers.sh` – launches up to seven vLLM servers.
-* `tmux_run.sh` – executes benchmarks concurrently using tmux.
 * `benchmark.sh` – executes `vllm bench serve`.
+* `tmux_run.sh` – executes benchmarks concurrently using tmux.
 * `example_outputs/` – example benchmark outputs.
 
 ### Prerequisites
