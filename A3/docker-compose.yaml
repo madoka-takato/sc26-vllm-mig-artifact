@@ -1,0 +1,25 @@
+services:
+
+  dcgm-exporter:
+    image: nvidia/dcgm-exporter:4.4.1-4.5.2-ubi9
+    ports:
+      - "9401:9401"
+
+  prometheus:
+    image: prom/prometheus:v3.6.0
+    ports:
+      - "9090:9090"
+    volumes:
+      - ./metrics/prometheus.yml:/etc/prometheus/prometheus.yml
+      - prometheus_data:/prometheus
+
+  grafana:
+    image: grafana/grafana:12.2
+    ports:
+      - "3000:3000"
+    volumes:
+      - ./metrics/grafana_dashboards:/etc/grafana/provisioning/dashboards
+      - ./metrics/grafana-datasources.yml:/etc/grafana/provisioning/datasources/datasources.yml
+
+volumes:
+  prometheus_data:
