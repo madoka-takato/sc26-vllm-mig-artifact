@@ -8,7 +8,8 @@ This artifact reproduces the single-server experiments presented in Figs. 1 and 
 
 ### Contents
 
-* `docker_run.sh` – launches a vLLM server.
+* `docker_run_vllm_only.sh` – launches a vLLM server without MIG.
+* `run_mig_single.sh` – launches a vLLM server on a specified MIG profile.
 * `benchmark.sh` – executes `vllm bench serve`.
 * `example_outputs/` – example benchmark outputs.
 
