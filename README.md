@@ -34,7 +34,7 @@ Each directory contains its own README with detailed instructions.
 
 ### Model and Dataset
 - Model: `LiquidAI/LFM2.5-1.2B-Instruct` 
-- Prompts: ShareGPT_V3 dataset （URL）
+- Prompts: ShareGPT_V3 (https://huggingface.co/datasets/anon8231489123/ShareGPT_Vicuna_unfiltered)
 
 ## Reproduction Overview
 
