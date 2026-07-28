@@ -23,7 +23,7 @@ This artifact provides the monitoring configuration and the bandwidth-measuremen
 * Docker Engine
 * NVIDIA Container Toolkit
 * DCGM Exporter 4.4.1-4.5.2
-* Prometheus v3.6.0
+* Prometheus 3.6.0
 * Grafana 12.2
 * NVIDIA Nsight Systems 2025.3.1.90
 
