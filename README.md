@@ -21,8 +21,8 @@ Each directory contains its own README with detailed instructions.
 
 ### Hardware
 
-- NVIDIA H100 PCIe GPU (80 GB) 
-- Evaluation system: PRIMERGY RX2540 M6 with 2× Intel Xeon Gold 6430 CPUs and 512 GB DDR5 memory
+- GPU: NVIDIA H100 PCIe ×1
+- GPU Memory: 80 GB HBM3
 
 ### Software
 
