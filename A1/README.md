@@ -57,5 +57,5 @@ GPU sharing (*vLLM-only*) and MIG-based GPU partitioning.
 
 `vllm bench serve` reports the Output Token Throughput for each run.
 The throughput values are summarized in an Excel file and plotted using the
-provided `plot_throughput_fig1.py` and `plot_throughput_fig2.py` scripts to reproduce Figs.~1 and 2.
+provided `plot_throughput_fig1.py` and `plot_throughput_fig2.py` scripts to reproduce Figs. 1 and 2.
 Example benchmark outputs are included with the artifact.
