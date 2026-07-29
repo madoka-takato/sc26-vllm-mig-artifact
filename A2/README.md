@@ -39,4 +39,7 @@ Identical to A1.
 
 ### Expected Output
 
-Each benchmark produces per-server throughput and latency metrics (TTFT, TPOT, ITL, and E2EL). Example outputs are provided in `example_outputs/`.
+Each benchmark produces per-server throughput and latency metrics (TTFT, TPOT, ITL, and E2EL). 
+The values are summarized in an Excel file and plotted using the
+provided `plot_throughput.py` and `plot_latency.py` scripts to reproduce Figs. 3–6.
+Example outputs are provided in `example_outputs/`.
