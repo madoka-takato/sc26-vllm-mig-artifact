@@ -11,6 +11,8 @@ This artifact reproduces the multi-server experiments presented in Figs. 3–6.
 * `launch_servers.sh` – launches up to seven vLLM servers.
 * `benchmark.sh` – executes `vllm bench serve`.
 * `tmux_run.sh` – executes benchmarks concurrently using tmux.
+* `plot_throughput.py` — plots throughput results from benchmark results.
+* `plot_latency.py` — plots latency metrics (TTFT, TPOT, ITL, and E2EL) from benchmark results.
 * `example_outputs/` – example benchmark outputs.
 
 ### Prerequisites
