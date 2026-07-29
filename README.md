@@ -20,18 +20,18 @@ Each directory contains its own README with detailed instructions.
 ## Requirements
 
 ### Hardware
-- NVIDIA H100 PCIe GPU (80 GB), MIG-capable
-- Test system: PRIMERGY RX2540 M6, 2× Intel Xeon Gold 6430,
-  512 GB DDR5 memory
+
+- NVIDIA H100 PCIe GPU (80 GB) 
+- Evaluation system: PRIMERGY RX2540 M6 with 2× Intel Xeon Gold 6430 CPUs and 512 GB DDR5 memory
 
 ### Software
+
 - Rocky Linux 9.5
 - NVIDIA Driver 535.288.01
-- CUDA 12.2
 - Docker Engine 29.3.0
 - NVIDIA Container Toolkit 1.19.0
-- vLLM container image: `vllm/vllm-openai:v0.19.0`
-- NVIDIA Nsight Systems 2025.3.1.90 (for A3)
+- vLLM Docker image: `vllm/vllm-openai:v0.19.0`
+- NVIDIA Nsight Systems 2025.3.1.90 (used for GPU memory bandwidth measurement in A3)
 
 ### Model and Dataset
 
