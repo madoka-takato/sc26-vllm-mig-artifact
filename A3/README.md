@@ -33,9 +33,10 @@ docker compose up -d
 Prometheus collects GPU metrics from DCGM Exporter and vLLM runtime metrics
 exposed through the `/metrics` endpoint.
 
-The dashboards are not included in this repository.
-After launching Grafana, import the required dashboards from the Grafana
-Dashboard Library:
+The Grafana dashboards are not included in this repository. After launching
+Grafana, import the required dashboards (the **NVIDIA DCGM Dashboard for
+Kubernetes (MIG & Non-MIG GPUs)** and the **vLLM dashboard**) from the
+Grafana Dashboard Library:
 
 <https://grafana.com/grafana/dashboards/>
 
