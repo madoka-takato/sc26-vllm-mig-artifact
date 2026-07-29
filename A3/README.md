@@ -11,7 +11,7 @@ bandwidth-measurement procedure used in the paper.
 - `metrics/`
   - `prometheus.yml`
   - `grafana-datasources.yml`
-- `profile.sh` — executes NVIDIA Nsight Systems profiling.
+- `nsys_bandwidth.sh` — executes NVIDIA Nsight Systems profiling.
 
 ## Prerequisites
 
