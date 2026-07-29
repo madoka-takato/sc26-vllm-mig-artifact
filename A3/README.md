@@ -64,9 +64,7 @@ Procedure:
    
 ## Expected Output
 
-The monitoring stack reports GPU memory usage and vLLM runtime metrics. 
+The monitoring stack reports GPU metrics and vLLM runtime metrics.
 
-The Nsight Systems profiling procedure generates `.nsys-rep` files, which can be
-opened with NVIDIA Nsight Systems to inspect GPU metrics, including DRAM
-Bandwidth (%), and reproduce the peak memory bandwidth measurements discussed
-in Section III-B.
+The Nsight Systems profiling procedure generates `.nsys-rep` files, which can
+be opened with NVIDIA Nsight Systems to inspect GPU metrics, including DRAM Bandwidth (%).
