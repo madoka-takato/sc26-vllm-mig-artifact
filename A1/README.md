@@ -55,6 +55,4 @@ GPU sharing (*vLLM-only*) and MIG-based GPU partitioning.
 
 ## Expected Output
 
-`vllm bench serve` reports the Output Token Throughput and latency metrics
-for each run. The generated results can be compared with the measurements
-reported in Figs. 1 and 2.
+`vllm bench serve` reports the Output Token Throughput for each run. The generated results can be compared with the measurements reported in Figs. 1 and 2.
