@@ -11,7 +11,7 @@ NVIDIA Multi-Instance GPU (*vLLM+MIG*).
   and MIG-based configurations (reproduces Figs. 1–2).
 - `A2/` — comparison of *vLLM-only* and *vLLM+MIG* configurations
   with different numbers of concurrent servers and workload intensities
-  (reproduces Figs. 3–6).
+  (reproduces Figs. 5–8).
 - `A3/` — monitoring stack (DCGM Exporter, Prometheus, Grafana)
   and GPU memory bandwidth measurement using NVIDIA Nsight Systems.
 
@@ -45,5 +45,5 @@ Each directory contains its own README with detailed instructions.
 2. (Optional) Start the monitoring stack in `A3/` to collect
    GPU and vLLM runtime metrics during the experiments.
 3. Run `A1/` to reproduce Figs. 1–2.
-4. Run `A2/` to reproduce Figs. 3–6.
+4. Run `A2/` to reproduce Figs. 5–8.
 5. Use `A3/` for the bandwidth measurement described in Section III-B.
